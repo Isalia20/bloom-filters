@@ -20,7 +20,7 @@ sudo apt-get update && sudo apt-get install libssl-dev
 
 #### Compilation
 ```
-gcc -o bloom bloom.c -I/opt/homebrew/opt/openssl@3/include -L/opt/homebrew/opt/openssl@3/lib -lcrypto
+gcc -Wno-deprecated-declarations -o bloom bloom.c -I/opt/homebrew/opt/openssl@3/include -L/opt/homebrew/opt/openssl@3/lib -lcrypto
 ```
 
 #### Usage
