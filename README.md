@@ -1,14 +1,29 @@
-# Bloom filters implemented in C
+# Bloom Filters in C
 
-## Installation & usage
-1. Install openssl. 
+This project implements Bloom filters in C
 
-For mac: `brew install openssl`
+## Installation
 
-For linux `sudo apt-get update && sudo apt-get install libssl-dev`
+### Prerequisites
 
-2. Compile the file, replace the openssl include paths to your ones:
+- OpenSSL library
 
-`gcc -o bloom bloom.c -I/opt/homebrew/opt/openssl@3/include -L/opt/homebrew/opt/openssl@3/lib -lcrypto`
+#### macOS
+```bash
+brew install openssl
+```
 
-3. Run it on `input.txt` example with `./bloom`
+#### Linux
+```
+sudo apt-get update && sudo apt-get install libssl-dev
+```
+
+#### Compilation
+```
+gcc -o bloom bloom.c -I/opt/homebrew/opt/openssl@3/include -L/opt/homebrew/opt/openssl@3/lib -lcrypto
+```
+
+#### Usage
+```
+./bloom
+```
