@@ -148,4 +148,3 @@ int main() {
     destroy_bloom_filter(filter);
     return 0;
 }
-
